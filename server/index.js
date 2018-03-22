@@ -14,10 +14,15 @@ const port = process.env.PORT || 3000
 // mongoose setup
 const MONGOURI = process.env.MONGOURI || 'someback-upaddress';
 // this .env file should be added to .gitignore since it contains passwords
-mongoose.connect( MONGOURI, {useMongoClient: true})
+mongoose.connect( MONGOURI)
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+// Body-parser settings
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: false
+}));
 
 app.set('port', port)
 

@@ -20,6 +20,9 @@ module.exports = {
   /**
    * env vars
    */
+  plugins: [
+    { src: '~/plugins/vue-googlemaps.js', ssr: false },
+  ],
   env: {
     mongo: process.env.MONGOURI
   },

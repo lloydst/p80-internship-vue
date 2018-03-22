@@ -1,6 +1,6 @@
 
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 // create a schema
 var WebsiteSchema = new Schema({
@@ -10,7 +10,7 @@ var WebsiteSchema = new Schema({
     type: Boolean,
   default: false}
 });
-var Website = mongoose.model('Website', WebsiteSchema);
+module.exports = mongoose.model('Website', WebsiteSchema);
 
 /* example methods
 function getAll() {
@@ -29,4 +29,4 @@ function findAndUpdate(err, id) {
 */
 
 // make this available to our users in our Node applications
-module.exports = Website;
+
