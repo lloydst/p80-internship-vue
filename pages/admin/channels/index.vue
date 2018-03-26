@@ -1,6 +1,6 @@
 <template>
   <section class="main">
-  <a routerLink="entrance">entrance</a> / <a routerLink="events">event</a> / <a routerLink="meeting">meeting</a>
+  <router-link to="channels/entrance">entrance</router-link> / <router-link to="channels/event">event</router-link> / <router-link to="channels/meeting">meeting</router-link>
   
   <!--this should be on entrance
    -->

@@ -1,6 +1,6 @@
 <template>
   <div class="sidenav">
-    <router-link to="/admin">Dashboard</router-link>
+    <router-link to="/admin/channels">Dashboard</router-link>
     <router-link to="/admin/settings">Settings</router-link>
     <router-link to="/admin/channels/entrance">channels</router-link>
     <router-link to="#">Docs?</router-link>
