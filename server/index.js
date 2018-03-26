@@ -6,6 +6,7 @@ const dotenv = require('dotenv').config()
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import { Nuxt, Builder } from 'nuxt'
+import morgan from 'morgan'
 
 const app = express()
 const host = process.env.HOST || '127.0.0.1'
@@ -23,6 +24,7 @@ app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: false
 }));
+// app.use(morgan('common'))
 
 app.set('port', port)
 

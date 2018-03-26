@@ -141,7 +141,7 @@ export default {
     this.getEvents()
     greeting()
     checkEvents()
-    // whatToDo()
+    whatToDo()
   }
 }
 </script>

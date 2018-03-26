@@ -9,6 +9,7 @@
 <script>
 
 export default {
+  middleware: 'redirects',
   mounted () {
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
